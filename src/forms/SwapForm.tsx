@@ -947,6 +947,7 @@ const SwapForm = ({ type, tabs }: { type: Type; tabs: TabViewProps }) => {
           {...tabs}
           extra={[
             {
+              title: "Settings",
               iconUrl: iconSettings,
               onClick: () => {
                 if (settingsModal.isOpen) {
@@ -958,6 +959,7 @@ const SwapForm = ({ type, tabs }: { type: Type; tabs: TabViewProps }) => {
               disabled: formState.isSubmitting,
             },
             {
+              title: "Reload",
               iconUrl: iconReload,
               onClick: () => {
                 reset()
